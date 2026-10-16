@@ -1,0 +1,25 @@
+name: test
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Internal links resolve
+        run: |
+          fail=0
+          for f in $(git ls-files '*.html'); do
+            for h in $(grep --color=never -oE 'href="[^"#?]+' "$f" | sed 's/href="//' | grep --color=never -vE '^/|:' ); do
+              t="$(dirname "$f")/$h"; [ -e "$t" ] || { echo "$f -> $h missing"; fail=1; }
+            done
+          done
+          exit $fail
+      - name: Trace check
+        if: hashFiles('REQUIREMENTS.md') != ''
+        run: bash scripts/trace-check.sh REQUIREMENTS.md .
