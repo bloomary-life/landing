@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Deletion - Bloomary</title>
+    <link rel="icon" href="../favicon.png?v=20260904-1" type="image/png">
+    <link rel="stylesheet" href="../styles.css?v=20260927-2">
+    <script src="/layout.js?v=20260927-1" defer></script>
+    <style>
+      :root {
+        --ink: #11120f;
+        --paper: #f2f0e8;
+        --white: #fffdf7;
+        --coral: #ff5f3d;
+        --lime: #c9f86a;
+        --line: rgba(17, 18, 15, 0.20);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font: 16px/1.6 Arial, Helvetica, sans-serif;
+      }
+
+      .legal-page {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      a { color: inherit; text-decoration-color: var(--coral); }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(38px, 7vw, 72px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 42px 0 10px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        font-size: 24px;
+        line-height: 1.15;
+      }
+
+      p, ul { margin: 0 0 14px; }
+      li { margin: 6px 0; }
+
+      .updated {
+        margin-bottom: 30px;
+        color: rgba(17, 18, 15, 0.68);
+        font-weight: 700;
+      }
+
+      .notice {
+        margin: 28px 0;
+        padding: 18px;
+        border: 1px solid var(--ink);
+        background: var(--lime);
+        font-weight: 700;
+      }
+
+      .contact {
+        padding: 20px;
+        border: 1px solid var(--ink);
+        background: var(--white);
+        box-shadow: 8px 8px 0 var(--ink);
+      }
+    </style>
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main class="legal-page">
+      <h1>Account Deletion</h1>
+      <p class="updated">Last updated: September 14, 2026</p>
+
+      <p>
+        Bloomary is operated by DailyMind LTD. This page explains how to delete your
+        Bloomary account data and what happens after deletion.
+      </p>
+
+      <div class="notice">
+        Do not send passwords, access tokens, Gemini API keys, payment card details, or client
+        secrets in an account deletion request.
+      </div>
+
+      <h2>Delete From The App</h2>
+      <p>
+        If you can access the Bloomary app, open Account and use <strong>Delete all my data</strong>.
+        The app asks for confirmation before deletion.
+      </p>
+      <p>
+        This removes the stored LinkedIn connection on the backend where it exists, clears local app
+        tokens and drafts where the app can do so, clears editor state, and returns the app to the
+        signed-out state.
+      </p>
+
+      <h2>Request Deletion By Email</h2>
+      <p>
+        If you no longer have the app installed or cannot access it, email
+        <a href="mailto:info@dailymind.eu?subject=Bloomary%20account%20deletion%20request">info@dailymind.eu</a>
+        with the subject <strong>Bloomary account deletion request</strong>.
+      </p>
+      <p>Please include enough information to identify the account, such as:</p>
+      <ul>
+        <li>the email address used with LinkedIn sign-in, if known;</li>
+        <li>your LinkedIn profile URL, if you connected LinkedIn;</li>
+        <li>the platform you used: iOS, Android, or web.</li>
+      </ul>
+      <p>
+        We may ask for additional confirmation if needed to prevent deleting the wrong account.
+        We normally complete valid deletion requests within 30 days.
+      </p>
+
+      <h2>Data Deleted</h2>
+      <ul>
+        <li>Bloomary LinkedIn auth/profile records linked to the identified account.</li>
+        <li>Backend per-day posting/request counts linked to the identified LinkedIn member ID.</li>
+        <li>Local drafts, tokens, and app state where deletion is performed inside the app.</li>
+      </ul>
+
+      <h2>Data You May Need To Delete Locally</h2>
+      <p>
+        DailyMind LTD cannot directly erase data stored only on your own device or browser after the
+        app is removed. You can also clear Bloomary local data by deleting the app, clearing browser
+        site data for <strong>bloomary.life</strong> and <strong>platform.bloomary.life</strong>, or
+        clearing app storage on your device.
+      </p>
+
+      <h2>Data We May Retain</h2>
+      <p>
+        We may retain limited records where required for legal, security, fraud-prevention, tax,
+        accounting, dispute, or support reasons. Feedback messages may be retained for up to 12
+        months unless a longer period is needed for those reasons.
+      </p>
+
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>
+          <strong>DailyMind LTD</strong><br>
+          Aglantzia, Kythiron 8, Apartment 204<br>
+          Nicosia, 2103, Cyprus<br>
+          Registration number: HE 439959<br>
+          VAT: CY10439959M<br>
+          Email: <a href="mailto:info@dailymind.eu">info@dailymind.eu</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-site-footer>
+      <div class="footer-toc">
+        <nav class="footer-nav" aria-label="Product">
+          <strong>Product</strong>
+          <a href="/">Home</a>
+          <a href="/#ios">iOS app</a>
+          <a href="/#aha">Writing flow</a>
+          <a href="/#outcomes">Outcomes</a>
+          <a href="/#workflow">Workflow</a>
+          <a href="/pricing/">Pricing</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Company">
+          <strong>Company</strong>
+          <a href="/mission/">Mission</a>
+          <a href="/support/">Support</a>
+          <a href="https://t.me/+NDQcpuABme9iYTU0">Community</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Legal">
+          <strong>Legal</strong>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/cookie-policy/">Cookie policy</a>
+          <a href="/refund-policy/">Refund policy</a>
+        </nav>
+        <nav class="footer-nav" aria-label="App">
+          <strong>App</strong>
+          <a href="https://platform.bloomary.life/">explore for free</a>
+        </nav>
+      </div>
+      <p class="footer-legal-line">© 2026 DailyMind LTD · HE 439959 · VAT CY10439959M</p>
+    </footer>
+  </body>
+</html>

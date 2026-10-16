@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Support for Bloomary: contact email, feedback form, community link, and privacy policy."
+    >
+    <title>Bloomary Support</title>
+    <link rel="icon" href="../favicon.png?v=20260904-1" type="image/png">
+    <link rel="stylesheet" href="../styles.css?v=20260927-2">
+    <script src="/layout.js?v=20260927-1" defer></script>
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main class="support-page">
+      <section class="support-hero">
+        <p class="eyebrow">Support</p>
+        <h1>Tell us what is broken, unclear, or worth improving.</h1>
+        <p class="lead">
+          For Bloomary support, app feedback, bug reports, and product ideas, use the form below
+          or email us directly.
+        </p>
+      </section>
+
+      <section class="support-grid" aria-label="Support options">
+        <article>
+          <h2>Email</h2>
+          <p>For support, feedback, and bug reports.</p>
+          <a class="secondary-link" href="mailto:info@dailymind.eu">info@dailymind.eu</a>
+        </article>
+        <article>
+          <h2>Community</h2>
+          <p>Share insights, questions, and feedback with other Bloomary users.</p>
+          <a class="secondary-link" href="https://t.me/+NDQcpuABme9iYTU0">Open Telegram group</a>
+        </article>
+        <article>
+          <h2>Privacy</h2>
+          <p>Read how Bloomary handles LinkedIn auth data, feedback, diagnostics, and local drafts.</p>
+          <a class="secondary-link" href="/privacy/">Privacy policy</a>
+        </article>
+      </section>
+
+      <section class="support-form-section">
+        <div class="section-copy">
+          <p class="eyebrow">Feedback form</p>
+          <h2>Send a message</h2>
+        </div>
+        <form id="supportFeedbackForm" class="support-form">
+          <label>
+            Your email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Title
+            <input name="title" type="text" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8" required></textarea>
+          </label>
+          <p id="supportFormStatus" class="form-status" aria-live="polite"></p>
+          <button class="primary-link" type="submit">Send feedback</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer>
+      <div class="footer-toc">
+        <nav class="footer-nav" aria-label="Product">
+          <strong>Product</strong>
+          <a href="/">Home</a>
+          <a href="/#ios">iOS app</a>
+          <a href="/#aha">Writing flow</a>
+          <a href="/#outcomes">Outcomes</a>
+          <a href="/#workflow">Workflow</a>
+          <a href="/pricing/">Pricing</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Company">
+          <strong>Company</strong>
+          <a href="/mission/">Mission</a>
+          <a href="/support/">Support</a>
+          <a href="https://t.me/+NDQcpuABme9iYTU0">Community</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Legal">
+          <strong>Legal</strong>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/cookie-policy/">Cookie policy</a>
+          <a href="/refund-policy/">Refund policy</a>
+        </nav>
+        <nav class="footer-nav" aria-label="App">
+          <strong>App</strong>
+          <a href="https://platform.bloomary.life/">explore for free</a>
+        </nav>
+      </div>
+      <p class="footer-legal-line">© 2026 DailyMind LTD · HE 439959 · VAT CY10439959M</p>
+    </footer>
+    <script src="../support.js?v=20261008-1"></script>
+  </body>
+</html>
