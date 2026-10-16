@@ -535,6 +535,11 @@ article p {
   margin-top: 28px;
 }
 
+.cta .open-source-note {
+  margin: 22px 0 0;
+  color: var(--muted);
+}
+
 .support-page {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;

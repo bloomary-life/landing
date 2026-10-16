@@ -57,6 +57,7 @@
           <a href="/mission/">Mission</a>
           <a href="/support/">Support</a>
           <a href="https://t.me/+NDQcpuABme9iYTU0">Community</a>
+          <a href="https://github.com/bloomary-life">Open source</a>
         </nav>
         <nav class="footer-nav" aria-label="Legal">
           <strong>Legal</strong>
